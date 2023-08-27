@@ -23,8 +23,13 @@ public class MyQueue<K>  {
 
     public K poll(){
         K result = (K)first.element;
-        first = first.next;
-        first.prev = null;
+        if(first.next != null){
+            first = first.next;
+            first.prev = null;
+        }else{
+            n = null;
+            first = null;
+        }
         return result;
     }
 
