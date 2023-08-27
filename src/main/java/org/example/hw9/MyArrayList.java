@@ -46,7 +46,13 @@ public class MyArrayList<K> {
         }
     }
 
-    public K get(int index){
-        return mass[index];
+    public K get(int index)
+    {
+        try {
+            return mass[index];
+        }catch (IndexOutOfBoundsException e){
+            System.out.println(e.getMessage());
+            return null;
+        }
     }
 }

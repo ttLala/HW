@@ -46,6 +46,9 @@ public class MyLinkedList<K> {
     }
     public K get(int index){
         int size = this.size();
+        if(index < 0 || index >= size){
+            return null;
+        }
         Node check = n;
         while (size != index + 1){
             check = check.prev;

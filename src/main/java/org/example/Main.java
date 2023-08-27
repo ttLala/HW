@@ -10,14 +10,8 @@ public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
-        MyQueue<Integer> q = new MyQueue<>();
-        q.add(1);
-        q.add(2);
-        q.add(3);
-        q.add(4);
-        System.out.println(q.poll());
-        System.out.println(q.poll());
-        System.out.println(q.poll());
-        System.out.println(q.poll());
+        MyArrayList<Integer> m = new MyArrayList<>();
+        m.add(1);
+        System.out.println(m.get(0));
     }
 }
